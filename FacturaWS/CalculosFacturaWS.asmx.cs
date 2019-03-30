@@ -15,7 +15,7 @@ namespace FacturaWS
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // Para permitir que se llame a este servicio web desde un script, usando ASP.NET AJAX, quite la marca de comentario de la línea siguiente. 
-    // [System.Web.Script.Services.ScriptService]
+    // [System.Web.Script.Services.ScriptService]llll
 
     public class CalculosFacturaWS : System.Web.Services.WebService
     {
@@ -37,7 +37,7 @@ namespace FacturaWS
             double w_bruto = cantidad * precio;
             double w_descuento = cantidad * precio * tipo_descuento / 100;
             double w_baseImponible = w_bruto - w_descuento;
-            double w_iva = w_baseImponible * tipo_iva / 100;
+            double w_iva = w_baseImponible * tipo_iva / 1000;
             double w_total = w_baseImponible + w_iva;
             resultado.Bruto = String.Format("{0:c}", w_bruto);
             resultado.Descuento = String.Format("{0:c}", w_descuento);
