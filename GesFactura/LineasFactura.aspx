@@ -45,7 +45,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Uso de Servicio Web - Cálculos de 2500 factura de un artículo</h2>
+            <h2>Uso de Servicio Web - Cálculos de 250000 factura de un artículo</h2>
         </div>
         <div class="izq"><asp:Label ID="Label1" runat="server" Text="Cantidad"></asp:Label></div>
         <div class="drcha"><asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox></div>
